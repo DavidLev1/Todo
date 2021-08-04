@@ -1,0 +1,8 @@
+body {
+  background-color: #003C57;
+}
+
+.todo-app {
+  margin: 2rem auto 0 auto;
+  max-width: 500px;
+}

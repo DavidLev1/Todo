@@ -1,0 +1,24 @@
+.app-header {
+  align-items: flex-end;
+}
+
+.app-header h1 {
+  flex-grow: 1;
+  color: #EB7B00;
+  /* font-style: oblique; */
+  font-weight: bolder;
+  text-shadow: 2px 2px 2px #78AD84;
+}
+
+.app-header h2 {
+  font-size: 1.2rem;
+}
+
+
+.undone-count {
+  color: red;
+}
+
+.done-count {
+  color: green;
+}
