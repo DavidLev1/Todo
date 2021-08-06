@@ -243,22 +243,31 @@ export default class App extends Component {
         <AppHeader toDo={todoCount} done={doneCount} />
         <div className='search-panel d-flex'>
           <SearchPanel onSearchChange={this.onSearchChange} />
-          &nbsp;
+          {/* &nbsp; */}
+        </div>
+
+        <div className='filter-btns'>
           <ItemStatusFilter
             filter={filter}
             onFilterChange={this.onFilterChange}
           />
         </div>
+
+        
+
         <TodoList
           items={visibleItems}
           onToggleImportant={this.onToggleImportant}
           onToggleDone={this.onToggleDone}
           onDelete={this.onDelete}
         />
-        <ItemAddForm
-          onItemAdded={this.onItemAdded}
-          isFormBtnActive={this.state.isAddTaskBtnActive}
-        />
+
+        <div className='add-task-form'>
+          <ItemAddForm
+            onItemAdded={this.onItemAdded}
+            isFormBtnActive={this.state.isAddTaskBtnActive}
+          />
+        </div>
 
         {toShowModal && <ModalComponent />}
       </div>

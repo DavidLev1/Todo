@@ -6,3 +6,14 @@ body {
   margin: 2rem auto 0 auto;
   max-width: 500px;
 }
+
+
+.filter-btns {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.add-task-form {
+  margin-bottom: 30px;
+}

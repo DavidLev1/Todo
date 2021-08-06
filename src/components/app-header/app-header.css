@@ -4,10 +4,10 @@
 
 .app-header h1 {
   flex-grow: 1;
-  color: #EB7B00;
+  color: #9FD4CF;
   /* font-style: oblique; */
   font-weight: bolder;
-  text-shadow: 2px 2px 2px #78AD84;
+  text-shadow: 2px 2px 2px #EBB902;
 }
 
 .app-header h2 {
