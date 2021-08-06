@@ -16,11 +16,7 @@ import {
 
 
 export default class App extends Component {
-  // TODO: Save state value and get it from local storage
-  
-
   state = {
-    // TODO: Get all tasks/items array from the Local Storage, it's 'items' value
     items: [
       // { id: 1, label: 'Drink Coffee', important: false, done: false },
       // { id: 2, label: 'Learn React', important: true, done: false },
@@ -98,7 +94,6 @@ export default class App extends Component {
 
     const item = { ...arr[idx], [propName]: value };
 
-    // TODO: Set this new array to the Local Storage
     return [...arr.slice(0, idx), item, ...arr.slice(idx + 1)];
   };
 
@@ -106,7 +101,6 @@ export default class App extends Component {
   // Toggle Todo/Task item (by its id) as done/Not done
   onToggleDone = (id) => {
     this.setState((state) => {
-      // TODO: Instead state.items get items/tasks array from the Local Storage?
       const items = this.toggleProperty(state.items, id, 'done');
       return { items };
     }, () => {
@@ -182,7 +176,6 @@ export default class App extends Component {
   }
 
 
-  // TODO: That finction must get 'items' array from the Local Storage
   // items - array of Todo objects
   // filter - which type of Todos objs to show
   filterItems(items, filter) {
@@ -207,7 +200,6 @@ export default class App extends Component {
   }
 
 
-  // TODO: That finction must get 'items' array from the Local Storage
   // items - array of Todo objects
   // search -
   searchItems(items, search) {
@@ -222,7 +214,6 @@ export default class App extends Component {
 
 
   render() {
-    // TODO: Get all taht data from the Local Storage enstead get it from the state
     const { items, filter, search, toShowModal } = this.state;
 
     // 'filter' method creates a new array, so we don't change the original array
